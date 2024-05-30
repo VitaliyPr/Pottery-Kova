@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Колекція - Kova</title>
+
+<meta name="description" content="Описание" />
+<meta name="keywords" content="Ключевики" />
+<meta name="author" content="" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="address=no" />
+
+<script>
+  const totalFontSize = function () {
+    const pageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    if (pageWidth > 1920) {
+      document.documentElement.style.fontSize = "14px";
+    } else if (pageWidth > 1025) {
+      let value = ((pageWidth * 10) / 1440).toFixed(2);
+      document.documentElement.style.fontSize = value + "px";
+    } else if (pageWidth > 576) {
+      document.documentElement.style.fontSize = "14px";
+    } else {
+      document.documentElement.style.fontSize = "10px";
+    }
+  };
+
+  totalFontSize();
+
+  window.addEventListener("resize", totalFontSize);
+</script>
+
+<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240530203755" />
+
+<link rel="stylesheet" href="css/style.min.css?_v=20240530203755" />
+
+
+
+</head>
+
+<body>
+
+  
+
+  <header class="header">
+  <div class="header__container">
+    <div class="header__burger">
+      <svg><use xlink:href="img/icons/icons.svg#header-burger"></use></svg>
+    </div>
+    <a href="/" class="header__logo logo"> <span>Pottery</span><span>kova</span> </a>
+    <div class="menu">
+  <div class="menu__wrap">
+    <div class="menu__close">
+      <svg><use xlink:href="img/icons/icons.svg#menu-close"></use></svg>
+    </div>
+    <nav class="nav">
+      <ul class="menu-list">
+        <li class="menu-item menu-item-has-children">
+          <a href="#" class="menu-link"
+            >Колекції виробів <svg><use xlink:href="img/icons/icons.svg#dropdown-arrow"></use></svg
+          ></a>
+          <ul class="menu-sublist">
+            <li class="menu-item">
+              <a href="category-kova.html" class="menu-link">Kova</a>
+            </li>
+            <li class="menu-item">
+              <a href="category-greenguy.html" class="menu-link">Зелений гай</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="index.html#popular" class="menu-link">Популярні товари</a>
+        </li>
+        <li class="menu-item">
+          <a href="index.html#about-us" class="menu-link">Про нас</a>
+        </li>
+        <li class="menu-item">
+          <a href="index.html#reviews" class="menu-link">Відгуки</a>
+        </li>
+        <li class="menu-item">
+          <a href="master-class.html" class="menu-link">Майстер-клас</a>
+        </li>
+      </ul>
+      <a href="https://t.me/+380992771852" target="_blank" class="menu__button button">Отримати консультацію</a>
+    </nav>
+  </div>
+</div>
+
+    <button class="header__cart cart" id="show-basket_btn">
+      <svg><use xlink:href="img/icons/icons.svg#cart"></use></svg>
+    </button>
+    <div class="basket" id="basket">
+      <div class="basket__wrapper">
+        <div class="basket__head">
+          <h2 class="basket__title">Кошик</h2>
+          <a href="#" class="basket__close" id="hide-basket_btn">
+            <svg><use xlink:href="img/icons/icons.svg#menu-close"></use></svg>
+          </a>
+        </div>
+        <div class="basket__list">
+          <div class="basket__product">
+            <div class="basket__item">
+              <div class="basket-item__picture">
+                <img src="img/product/kova/kova1.jpg" alt="image" loading="lazy" />
+              </div>
+              <div class="basket-item__body">
+                <h4 class="bastet-item__name">Фільтр для кави і горнятко</h4>
+                <div class="basket-item__quantity">
+                  <p>Кількість</p>
+                  <span class="minus">
+                    <svg><use xlink:href="img/icons/icons.svg#basket-minus"></use></svg
+                  ></span>
+                  <input value="1"/>
+                  <span class="plus"
+                    ><svg><use xlink:href="img/icons/icons.svg#basket-plus"></use></svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="basket__button">Очистити</a>
+        </div>
+      </div>
+      <div class="basket__info">
+        <h6 class="basket-info__title">Всього</h6>
+        <div class="basket-info__item">
+          <p class="basket-info__item_text">1 товар на суму</p>
+          <div class="basket-info__item_price"><span>1250</span> ₴</div>
+        </div>
+        <div class="basket-info__item">
+          <p class="basket-info__item_text">До сплати</p>
+          <div class="basket-info__item_price"><span>1250</span> ₴</div>
+        </div>
+        <div class="basket-info__buttons">
+          <a href="order.html" class="button button--full button--green">Оформити замовлення</a>
+          <a href="#" id="basket_more" class="button button--full">Продовжити покупки</a>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <div id="overlay"></div>
+</header>
+
+
+  <main>
+
+    <section class="section">
+  <div class="section__container section__container--hero">
+    <h2 class="section__title">Kova</h2>
+    <div class="product-list">
+      <a href="product-page1.html" class="product-item">
+  <div class="product-image-wrapper">
+    <div class="product-image">
+      <img src="img/product/kova/kova1.jpg" alt="image" loading="lazy">
+    </div>
+    <button class="product-cart">
+      <svg><use xlink:href="img/icons/icons.svg#product-cart"></use></svg>
+    </button>
+  </div>
+  <div class="product-body">
+    <h4 class="product-title"> Фільтр і горнятко </h4>
+    <div class="product-price price">₴ 1250</div>
+  </div>
+</a>
+      <a href="product-page1.html" class="product-item">
+  <div class="product-image-wrapper">
+    <div class="product-image">
+      <img src="img/product/kova/kova2.jpg" alt="image" loading="lazy">
+    </div>
+    <button class="product-cart">
+      <svg><use xlink:href="img/icons/icons.svg#product-cart"></use></svg>
+    </button>
+  </div>
+  <div class="product-body">
+    <h4 class="product-title">Чаша Грааля</h4>
+    <div class="product-price price">₴ 750</div>
+  </div>
+</a>
+      <a href="product-page1.html" class="product-item">
+  <div class="product-image-wrapper">
+    <div class="product-image">
+      <img src="img/product/kova/kova3.jpg" alt="image" loading="lazy">
+    </div>
+    <button class="product-cart">
+      <svg><use xlink:href="img/icons/icons.svg#product-cart"></use></svg>
+    </button>
+  </div>
+  <div class="product-body">
+    <h4 class="product-title">Мезозойська ера</h4>
+    <div class="product-price price">₴ 1100</div>
+  </div>
+</a>
+      <a href="product-page1.html" class="product-item">
+  <div class="product-image-wrapper">
+    <div class="product-image">
+      <img src="img/product/kova/kova4.jpg" alt="image" loading="lazy">
+    </div>
+    <button class="product-cart">
+      <svg><use xlink:href="img/icons/icons.svg#product-cart"></use></svg>
+    </button>
+  </div>
+  <div class="product-body">
+    <h4 class="product-title">Келих імператриці</h4>
+    <div class="product-price price">₴ 750</div>
+  </div>
+</a>
+      <a href="product-page1.html" class="product-item">
+  <div class="product-image-wrapper">
+    <div class="product-image">
+      <img src="img/product/kova/kova5.jpg" alt="image" loading="lazy">
+    </div>
+    <button class="product-cart">
+      <svg><use xlink:href="img/icons/icons.svg#product-cart"></use></svg>
+    </button>
+  </div>
+  <div class="product-body">
+    <h4 class="product-title">Волошкова симфонія</h4>
+    <div class="product-price price">₴ 800</div>
+  </div>
+</a>
+      <a href="product-page1.html" class="product-item">
+  <div class="product-image-wrapper">
+    <div class="product-image">
+      <img src="img/product/kova/kova6.jpg" alt="image" loading="lazy">
+    </div>
+    <button class="product-cart">
+      <svg><use xlink:href="img/icons/icons.svg#product-cart"></use></svg>
+    </button>
+  </div>
+  <div class="product-body">
+    <h4 class="product-title">Чашка Ніфертіті</h4>
+    <div class="product-price price">₴ 1100</div>
+  </div>
+</a>
+      <a href="product-page1.html" class="product-item">
+  <div class="product-image-wrapper">
+    <div class="product-image">
+      <img src="img/product/kova/kova7.jpg" alt="image" loading="lazy">
+    </div>
+    <button class="product-cart">
+      <svg><use xlink:href="img/icons/icons.svg#product-cart"></use></svg>
+    </button>
+  </div>
+  <div class="product-body">
+    <h4 class="product-title">Обсидіан</h4>
+    <div class="product-price price">₴ 250</div>
+  </div>
+</a>
+      <a href="product-page1.html" class="product-item">
+  <div class="product-image-wrapper">
+    <div class="product-image">
+      <img src="img/product/kova/kova8.jpg" alt="image" loading="lazy">
+    </div>
+    <button class="product-cart">
+      <svg><use xlink:href="img/icons/icons.svg#product-cart"></use></svg>
+    </button>
+  </div>
+  <div class="product-body">
+    <h4 class="product-title">Брунатна тарілка</h4>
+    <div class="product-price price">₴ 2200</div>
+  </div>
+</a>
+      <a href="product-page1.html" class="product-item">
+  <div class="product-image-wrapper">
+    <div class="product-image">
+      <img src="img/product/kova/kova9.jpg" alt="image" loading="lazy">
+    </div>
+    <button class="product-cart">
+      <svg><use xlink:href="img/icons/icons.svg#product-cart"></use></svg>
+    </button>
+  </div>
+  <div class="product-body">
+    <h4 class="product-title">Магматичний обсидіан</h4>
+    <div class="product-price price">₴ 550</div>
+  </div>
+</a>
+      <a href="product-page1.html" class="product-item">
+  <div class="product-image-wrapper">
+    <div class="product-image">
+      <img src="img/product/kova/kova10.jpg" alt="image" loading="lazy">
+    </div>
+    <button class="product-cart">
+      <svg><use xlink:href="img/icons/icons.svg#product-cart"></use></svg>
+    </button>
+  </div>
+  <div class="product-body">
+    <h4 class="product-title">Авочашка</h4>
+    <div class="product-price price">₴ 1100</div>
+  </div>
+</a>
+      <a href="product-page1.html" class="product-item">
+  <div class="product-image-wrapper">
+    <div class="product-image">
+      <img src="img/product/kova/kova11.jpg" alt="image" loading="lazy">
+    </div>
+    <button class="product-cart">
+      <svg><use xlink:href="img/icons/icons.svg#product-cart"></use></svg>
+    </button>
+  </div>
+  <div class="product-body">
+    <h4 class="product-title">Рожевий кварц</h4>
+    <div class="product-price price">₴ 800</div>
+  </div>
+</a>
+      <a href="product-page1.html" class="product-item">
+  <div class="product-image-wrapper">
+    <div class="product-image">
+      <img src="img/product/kova/kova12.jpg" alt="image" loading="lazy">
+    </div>
+    <button class="product-cart">
+      <svg><use xlink:href="img/icons/icons.svg#product-cart"></use></svg>
+    </button>
+  </div>
+  <div class="product-body">
+    <h4 class="product-title">Благородний корал</h4>
+    <div class="product-price price">₴ 1100</div>
+  </div>
+</a>
+      <a href="product-page1.html" class="product-item">
+  <div class="product-image-wrapper">
+    <div class="product-image">
+      <img src="img/product/kova/kova13.jpg" alt="image" loading="lazy">
+    </div>
+    <button class="product-cart">
+      <svg><use xlink:href="img/icons/icons.svg#product-cart"></use></svg>
+    </button>
+  </div>
+  <div class="product-body">
+    <h4 class="product-title">Вулканічне скло</h4>
+    <div class="product-price price">₴ 1100</div>
+  </div>
+</a>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- END main page -->
+
+  <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__col">
+      <a href="/" class="footer__logo logo"> <span>Pottery</span><span>kova</span> </a>
+      <p class="footer__subtitle">Місце, де кожен предмет створений з любов'ю до мистецтва та природи</p>
+    </div>
+    <div class="footer__col">
+      <h2 class="footer__title">Контакти</h2>
+      <div class="footer__social social">
+        <a href="https://t.me/+380992771852" target="_blank" class="social__item">
+          <img src="img/footer/footer-telegram-icon.png" alt="image" loading="lazy" >
+        </a>
+        <a href="https://www.instagram.com/pottery.kova/" target="_blank" class="social__item">
+          <img src="img/footer/footer-instagram-icon.png" alt="image" loading="lazy" >
+        </a>
+        <a href="viber://chat?number=+380992771852" target="_blank" class="social__item">
+          <img src="img/footer/footer-viber-icon.png" alt="image" loading="lazy" >
+        </a>
+      </div>
+      <a href="mailto:ekateryna.nosan@gmail.com" target="_blank" class="footer__link">ekateryna.nosan@gmail.com</a>
+      <p class="footer__city">м. Київ</p>
+    </div>
+  </div>
+  <div class="footer__bg">
+    <img src="img/footer/footer-bg.jpg" alt="image" loading="lazy" >
+  </div>
+</footer>
+  
+  
+  <script src="js/plugins/plugins.min.js?_v=20240530203755"></script>
+
+<script src="js/app.min.js?_v=20240530203755"></script>
+
+
+<!-- <div id="cookies" class="cookies">
+  <div class="cookies__container">
+    <div class="cookies__body">
+      <p class="p">Мы используем файлы cookie, чтобы улучшать сайт для вас. <a href="cookie.html">Подробнее</a></p>
+      <button id="cookies-btn" class="button">Ok</button>
+    </div>
+  </div>
+</div> -->
+
+ 
+</body>
+
+</html>
