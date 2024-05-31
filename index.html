@@ -36,9 +36,9 @@
   window.addEventListener("resize", totalFontSize);
 </script>
 
-<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240530203755" />
+<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240531164359" />
 
-<link rel="stylesheet" href="css/style.min.css?_v=20240530203755" />
+<link rel="stylesheet" href="css/style.min.css?_v=20240531164359" />
 
 
 
@@ -53,7 +53,7 @@
     <div class="header__burger">
       <svg><use xlink:href="img/icons/icons.svg#header-burger"></use></svg>
     </div>
-    <a href="/" class="header__logo logo"> <span>Pottery</span><span>kova</span> </a>
+    <a href="index.html" class="header__logo logo"> <span>Pottery</span><span>kova</span> </a>
     <div class="menu">
   <div class="menu__wrap">
     <div class="menu__close">
@@ -94,6 +94,7 @@
 
     <button class="header__cart cart" id="show-basket_btn">
       <svg><use xlink:href="img/icons/icons.svg#cart"></use></svg>
+      <div class="cart__num">1</div>
     </button>
     <div class="basket" id="basket">
       <div class="basket__wrapper">
@@ -261,7 +262,7 @@
     <div class="aboutus">
       <div class="aboutus__col">
         <div class="aboutus__picture--big">
-          <img src="img/main/about-us/photo1.jpg" alt="image" loading="lazy" >
+          <img src="img/main/about-us/photo1.jpg" alt="image" loading="lazy" />
         </div>
       </div>
       <div class="aboutus__col">
@@ -269,26 +270,39 @@
           <p class="aboutus__text">
             <span>Майстерня Pottery.kova</span> народилася з бажання створити особливе місце, де творчість, краса та
             спокій поєднуються в одне ціле. Вона виникла з мрії про створення унікального простору, де кожен може
-            відчути себе митецькою душею та вільно виразити свою творчість.
+            відчути себе митецькою душею та вільно виразити свою творчість
           </p>
         </div>
         <div class="aboutus__row">
           <div class="aboutus-row__col">
             <div class="aboutus__picture--medium">
-              <img src="img/main/about-us/photo2.jpg" alt="image" loading="lazy" >
+              <img src="img/main/about-us/photo2.jpg" alt="image" loading="lazy" />
             </div>
           </div>
           <div class="aboutus-row__col">
             <div class="aboutus__gallery">
-              <img src="img/main/about-us/photo3.jpg" alt="image" loading="lazy" class="aboutus-gallery__img">
-              <img src="img/main/about-us/photo4.jpg" alt="image" loading="lazy" class="aboutus-gallery__img">
-              <img src="img/main/about-us/photo5.jpg" alt="image" loading="lazy" class="aboutus-gallery__img">
-              <img src="img/main/about-us/photo6.jpg" alt="image" loading="lazy" class="aboutus-gallery__img">
+              <picture>
+                <source media="(max-width: 1025px)" srcset="img/main/about-us/photo1_mob.jpg" />
+                <img src="img/main/about-us/photo3.jpg" alt="image" loading="lazy" class="aboutus-gallery__img" />
+              </picture>
+              <picture>
+                <source media="(max-width: 1025px)" srcset="img/main/about-us/photo2_mob.jpg" />
+
+                <img src="img/main/about-us/photo4.jpg" alt="image" loading="lazy" class="aboutus-gallery__img" />
+              </picture>
+              <picture>
+                <source media="(max-width: 1025px)" srcset="img/main/about-us/photo3_mob.jpg" />
+                <img src="img/main/about-us/photo5.jpg" alt="image" loading="lazy" class="aboutus-gallery__img" />
+              </picture>
+              <picture>
+                <source media="(max-width: 1025px)" srcset="img/main/about-us/photo3_mob.jpg" />
+                <img src="img/main/about-us/photo6.jpg" alt="image" loading="lazy" class="aboutus-gallery__img" />
+              </picture>
             </div>
             <p class="aboutus__text">
-              <span>Наша майстерня кераміки</span> - це не просто місце для створення виробів,
-              але й місце, де народжується нова спільнота та втілюється кожна ідея унікальних виробів. Приходьте до нас
-              та відчуйте магію творчості та спокою у кожному куточку нашої майстерні
+              <span>Наша майстерня кераміки</span> - це не просто місце для створення виробів, але й місце, де
+              народжується нова спільнота та втілюється кожна ідея унікальних виробів. Приходьте до нас та відчуйте
+              магію творчості та спокою у кожному куточку нашої майстерні
             </p>
           </div>
         </div>
@@ -406,7 +420,7 @@
   <footer class="footer">
   <div class="footer__container">
     <div class="footer__col">
-      <a href="/" class="footer__logo logo"> <span>Pottery</span><span>kova</span> </a>
+      <a href="index.html" class="footer__logo logo"> <span>Pottery</span><span>kova</span> </a>
       <p class="footer__subtitle">Місце, де кожен предмет створений з любов'ю до мистецтва та природи</p>
     </div>
     <div class="footer__col">
@@ -432,9 +446,9 @@
 </footer>
   
   
-  <script src="js/plugins/plugins.min.js?_v=20240530203755"></script>
+  <script src="js/plugins/plugins.min.js?_v=20240531164359"></script>
 
-<script src="js/app.min.js?_v=20240530203755"></script>
+<script src="js/app.min.js?_v=20240531164359"></script>
 
 
 <!-- <div id="cookies" class="cookies">
