@@ -1719,6 +1719,7 @@ p {
   .hero__title span {
     font-size: 15rem;
     line-height: 1.2;
+    letter-spacing: -0.363rem;
   }
 
   .hero__text {
@@ -1731,7 +1732,7 @@ p {
   .hero__photo1 {
     width: 25.9rem;
     height: 0;
-    right: 20.1rem;
+    right: 22.1rem;
     top: 8.1rem;
   }
 
@@ -1773,7 +1774,7 @@ p {
 
   .hero-decor1 {
     width: 24.3rem;
-    left: 0;
+    left: -2rem;
     top: calc(100% - 33.9rem);
   }
 
@@ -1784,7 +1785,7 @@ p {
   .hero-decor2 {
     width: 34.4rem;
     right: 0;
-    top: 11.5rem;
+    top: 12.3rem;
   }
 
   .hero-decor2._show {
@@ -1963,7 +1964,8 @@ p {
   }
 
   .reviews-item__text {
-    max-width: 31.5rem;
+    text-align: center;
+    max-width: 40rem;
     margin: 0 auto;
   }
 
